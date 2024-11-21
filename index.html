@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopmate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Projecticon.jpg">
+    <style>
+     
+        /* Card hover effect */
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button transition */
+        .btn-custom {
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #98bbe0; /* Darker blue on hover */
+        }
+
+        /* Image animation */
+        .product-img {
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <!-- Brand Name / Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Projecticon.jpg" alt="Brand Logo" class="me-2"> ShopMate
+            </a>
+            
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Links on Left -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deal.html">Deals</a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex mx-auto w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+
+                <!-- Icons on Right -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="notifications.html">
+                            <i class="bi bi-bell"></i> Notifications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart-fill"></i> Cart
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">
+                            <i class="bi bi-person-fill"></i> Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content: Product Cards -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Featured Products</h2>
+      <div class="row">
+          <!-- Product Card Example 1 -->
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="pexels-geyonk-1152077.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Lether Bag</h5>
+                      <p class="card-text">&#8377 99.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Product Card Example 2 -->
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="pexels-melvin-buezo-1253763-2529148.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Sport Shoe</h5>
+                      <p class="card-text"> &#8377 149.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Product Card Example 3 -->
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="jacket.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Lether Jacket</h5>
+                      <p class="card-text">&#8377 89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="pendrive.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Pendrive</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="Toycar.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Toycar</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="mat.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Mat</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="SoundSpeaker.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Speaker</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="vegahelmet.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Helmet</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="iq00z9spro.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">IQOO z9s pro</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="HEADPHONE.JPG" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">boAt  Headphone</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="AIRPURIFIER.JPG" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Air Purifier</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="ZaveriPearls.jpeg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Zaveri Pearls </h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="matrixwatch.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Matrix Watch</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="boatheadphone.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">boat headphone</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="niviabodylotion.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Nivia Body Lotion</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="powerAdapter.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Power Adapter</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="GharSoap.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Ghar Soap</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 mb-2">
+              <div class="card product-card">
+                  <img src="safaritrollybag.jpg" alt="Product Image" class="card-img-top product-img">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Safari Trolly Bag</h5>
+                      <p class="card-text">$89.99</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary btn-custom">Add to Cart</button>
+                          <button class="btn btn-success btn-custom">Buy Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Add more product cards as needed -->
+      </div>
+  </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons (For Icons in Navbar) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+      <div class="row">
+          <!-- Customer Service Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Customer Service</h6>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Help Center</a></li>
+                  <li><a href="#" class="text-light">Returns</a></li>
+                  <li><a href="#" class="text-light">Order Tracking</a></li>
+                  <li><a href="#" class="text-light">Shipping</a></li>
+              </ul>
+          </div>
+
+          <!-- Company Info Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">About Us</h6>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Company Info</a></li>
+                  <li><a href="#" class="text-light">Careers</a></li>
+                  <li><a href="#" class="text-light">Investor Relations</a></li>
+                  <li><a href="#" class="text-light">Newsroom</a></li>
+              </ul>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Quick Links</h6>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Gift Cards</a></li>
+                  <li><a href="#" class="text-light">Sell on ShopMate</a></li>
+                  <li><a href="#" class="text-light">Affiliate Program</a></li>
+                  <li><a href="#" class="text-light">Coupons</a></li>
+              </ul>
+          </div>
+
+          <!-- Follow Us Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Follow Us</h6>
+              <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+              <p class="mt-3">Download Our App</p>
+              <a href="#"><img src="GooglePlayStoreicon.jpg" alt="Google Play Store"></a>
+              <a href="#"><img src="AppleAppStoreicon.jpg" alt="Apple App Store"></a>
+          </div>
+      </div>
+
+      <!-- Payment Methods Section -->
+      <div class="text-center my-4">
+          <p class="mb-1">We accept:</p>
+          <img src="visaicon.jpg" alt="Visa">
+          <img src="mastercard.jpg" alt="Mastercard">
+          <img src="paypalicon.jpg" alt="PayPal">
+          <img src="Americanexpressicon.jpg" alt="American Express">
+      </div>
+
+      <!-- Bottom Links and Copyright -->
+      <div class="text-center">
+          <p class="mb-1">
+              <a href="#" class="text-light me-2">Privacy Policy</a> |
+              <a href="#" class="text-light me-2">Terms of Service</a> |
+              <a href="#" class="text-light">Contact Us</a>
+          </p>
+          <p>&copy; 2023 ShopMate, Inc. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons (for Social Media Icons) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>
